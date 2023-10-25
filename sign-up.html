@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sam Threads | Sign Up</title>
+
+
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/sign-up.css" />
+    </head>
+    <body>
+        <header class="navbar">
+            <img id="navbar__logo" class="company__logo" src="images/logo.png" alt="logo" />
+            <ul class="navbar__options">
+                <li><a href="/">Home</a></li>
+                <li><a href="/products.html">Products</a></li>
+                <li><a href="/contact-us.html">Contact Us</a></li>
+            </ul>
+        </header>
+        <section class="flex-center">
+            <form id="signup_form">
+                <h3>Sign Up</h3>
+                <div class="textfield">
+                    <input  id="username_input"  class="textfield__input" type="text" placeholder="Enter username" required />
+                    <p id="error_username" class="textfield__error"></p>
+                </div>
+                <div class="textfield">
+                    <input id="email_input" class="textfield__input" type="email" placeholder="Enter email" required />
+                    <p id="error_email" class="textfield__error"></p>
+                </div>
+                <div class="textfield">
+                    <input id="password_input" class="textfield__input" type="password" placeholder="Enter password" required/>
+                    <p id="error_password" class="textfield__error"></p>
+                </div>
+                <div class="textfield">
+                    <input id="cfpassword_input" class="textfield__input" type="password" placeholder="Enter confirm password" required />
+                    <p id="error_password" class="textfield__error"></p>
+
+                </div>
+                <button type="submit" id="btn__signup" class="btn--primary">
+                    Sign Up
+                </button>
+                <p style="text-align: center; font-size: 14px;"> Already have an account? 
+                    <a href="sign-in.html" style="color: var(--primary-color);">Sign In<a>
+                </p>
+            </form>
+
+        </section>
+        
+        <script src="js/auth.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                checkSignedIn();
+                handleSignUp();
+                handleSelectNavOption();
+            });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "title": "Tshirt For Men",
+        "description": "A comfortable and stylish t-shirt for men. Perfect for everyday wear, this cotton t-shirt offers a great fit and comes in various colors.",
+        "price": 20,
+        "category": "Summer Product",
+        "tag": "tshirt",
+        "img": "images/products/product-1.jpeg",
+        "rating": 4.3
+    },
+    {
+        "id": 2,
+        "title": "Stylish Retro Women Dress",
+        "description": "Step back in time with this retro-inspired women's dress. With a unique and elegant design, it's perfect for special occasions.",
+        "price": 45,
+        "category": "Spring Product",
+        "tag": "dress",
+        "img": "images/products/product-2.jpeg",
+        "rating": 4.7
+    },
+    {
+        "id": 3,
+        "title": "Warm Winter Jacket",
+        "description": "Stay cozy and warm in this winter jacket. Made with high-quality materials, it's designed to keep you comfortable even in the coldest weather.",
+        "price": 55,
+        "category": "Winter Product",
+        "tag": "jacket",
+        "img": "images/products/product-3.jpeg",
+        "rating": 4.2
+    },
+    {
+        "id": 4,
+        "title": "Spring Floral Blouse",
+        "description": "Embrace the beauty of spring with this floral blouse. Its vibrant colors and soft fabric make it a must-have for the season.",
+        "price": 30,
+        "category": "Spring Product",
+        "tag": "blouse",
+        "img": "images/products/product-4.jpeg",
+        "rating": 4.6
+    },
+    {
+        "id": 5,
+        "title": "Autumn Sweater",
+        "description": "Get ready for the crisp autumn weather with this cozy sweater. It's stylish and perfect for layering during the fall season.",
+        "price": 40,
+        "category": "Autumn Product",
+        "tag": "sweater",
+        "img": "images/products/product-5.jpeg",
+        "rating": 4.4
+    },
+    {
+        "id": 6,
+        "title": "Summer Beach Shorts",
+        "description": "Enjoy the summer sun with these comfortable beach shorts. Whether you're by the ocean or pool, these shorts are a great choice.",
+        "price": 25,
+        "category": "Summer Product",
+        "tag": "shorts",
+        "img": "images/products/product-6.jpeg",
+        "rating": 4.8
+    },
+    {
+        "id": 7,
+        "title": "Casual Spring Hoodie",
+        "description": "Stay casually comfortable this spring with our hoodie. It's perfect for those cool spring evenings and comes in various colors.",
+        "price": 35,
+        "category": "Spring Product",
+        "tag": "hoodie",
+        "img": "images/products/product-7.jpeg",
+        "rating": 4.1
+    },
+    {
+        "id": 8,
+        "title": "Winter Scarf",
+        "description": "Stay warm and stylish this winter with our cozy scarf. It's a versatile accessory that can complement any winter outfit.",
+        "price": 30,
+        "category": "Winter Product",
+        "tag": "scarf",
+        "img": "images/products/product-8.jpeg",
+        "rating": 4.9
+    },
+    {
+        "id": 9,
+        "title": "Autumn Leather Boots",
+        "description": "Step into the autumn season with these fashionable leather boots. They are designed for comfort and style, perfect for the changing weather.",
+        "price": 50,
+        "category": "Autumn Product",
+        "tag": "boots",
+        "img": "images/products/product-9.jpeg",
+        "rating": 4.2
+    },
+    {
+        "id": 10,
+        "title": "Summer Sun Hat",
+        "description": "Protect yourself from the summer sun with this stylish sun hat. It's a must-have accessory for any beach or outdoor adventure.",
+        "price": 15,
+        "category": "Summer Product",
+        "tag": "hat",
+        "img": "images/products/product-10.jpeg",
+        "rating": 4.7
+    },
+    {
+        "id": 11,
+        "title": "Classic Autumn Cardigan",
+        "description": "Stay cozy and fashionable with this classic autumn cardigan. It's perfect for layering and adds a touch of elegance to your fall wardrobe.",
+        "price": 40,
+        "category": "Autumn Product",
+        "tag": "cardigan",
+        "img": "images/products/product-11.jpeg",
+        "rating": 4.5
+    },
+    {
+        "id": 12,
+        "title": "Summer Beach Towel",
+        "description": "Hit the beach in style with our summer beach towel. It's vibrant and absorbent, making it the perfect companion for your beach days.",
+        "price": 20,
+        "category": "Summer Product",
+        "tag": "towel",
+        "img": "images/products/product-12.jpeg",
+        "rating": 4.3
+    }
+]

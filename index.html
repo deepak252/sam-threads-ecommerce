@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sam Threads</title>
+
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/home.css" />
+    </head>
+    <body>
+        <header class="navbar">
+            <img id="navbar__logo" class="company__logo" src="images/logo.png" alt="logo" />
+            <div class="navbar__content">
+                <ul class="navbar__options">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products.html">Products</a></li>
+                    <li><a href="/contact-us.html">Contact Us</a></li>
+                </ul>
+                <form id="product_search_form">
+                    <div class="textfield" >
+                        <input
+                            id="search__input"
+                            class="textfield__input"
+                            type="text"
+                            placeholder="Search for product"
+                        />
+                        <button type="submit" id="btn_search_product">
+                            <img
+                                class="textfield__icon"
+                                src="images/search.png"
+                                alt="search"
+                            />
+                        </button>
+                    </div>
+                </form>
+                <a href="/cart.html">
+                    <img
+                        id="btn__nav__cart"
+                        class="size-30"
+                        src="images/cart.png"
+                        alt="cart"
+                    />
+                </a>
+                <div id="userprofile__nav">
+                    <img
+                        id="btn__profile__nav"
+                        class="size-30"
+                        src="images/profile.png"
+                        alt="profile"
+                    />
+                    <label id="username__nav">User</label>
+                </div>
+                <a id="btn__signin__nav" class="btn--primary" href="sign-in.html"
+                    >Sign In</a
+                >
+                <btn
+                    id="btn__signout__nav"
+                    class="btn--primary"
+                    onclick="handleSignOut()"
+                    >Sign Out</btn
+                >
+            </div>
+        </header>
+        <section class="flex-center" style="flex-direction: column;">
+            <div id="intro_container">
+                <div id="introduction_text">
+                    <h1>Welcome to Sam Threads </h1>
+                    <h1> - Where Style Meets Convenience</h1>
+                    <p>Discover the latest trends, impeccable quality, and unbeatable style right here. </p>
+                    <a href="#products__container" class="btn--primary">Shop Now &#8594;</a>
+
+                </div>
+                <img src="images/home.png" alt="intro">
+            </div>
+            <div class="content">
+                
+                <div class="carousel__container" id="carousel-1">
+                    <div class="carousel__slide">
+                        <img
+                            id="carousel__img1"
+                            src="images/carousel/carousel-1.jpeg"
+                            alt="ad_1"
+                        />
+                    </div>
+                    <div class="carousel__slide">
+                        <img
+                            id="carousel__img1"
+                            src="images/carousel/carousel-2.jpeg"
+                            alt="ad_2"
+                        />
+                    </div>
+                    <div class="carousel__slide">
+                        <img
+                            id="carousel__img1"
+                            src="images/carousel/carousel-3.jpeg"
+                            alt="ad_3"
+                        />
+                    </div>
+                </div>
+                <div id="products__container">
+                    <div id="product_category">
+                        <h3 id="product_category__label">Featured</h3>
+                        <select id="product_category__dropdown" name="filter">
+                            <option value="">All</option>
+                            <option value="Summer">Summer Products</option>
+                            <option value="Winter">Winter Products</option>
+                            <option value="Autumn">Autumn Products</option>
+                            <option value="Spring">Spring Products</option>
+                        </select>
+                    </div>
+                    <div id="product_list__container">
+                        <!-- Add Products Dynamically -->
+                    </div>
+                </div>
+                <!-- <div id="partners__container">
+                    <img src="images/partners/nike.png" alt="nike">
+                    <img src="images/partners/adidas.png" alt="adidas">
+                    <img src="images/partners/paypal.png" alt="paypal">
+                </div> -->
+                <div id="partners__container">
+                    <div class="col-5">
+                        <img src="images/partners/logo-godrej.png" alt="">
+                     </div>
+                    <div class="col-5">
+                        <img src="images/partners/logo-coca-cola.png" alt="">
+                     </div>
+                    <div class="col-5">
+                      <img src="images/partners/logo-oppo.png">
+                     </div>
+                    <div class="col-5">
+                      <img src="images/partners/logo-philips.png">
+                     </div>
+                    <div class="col-5">
+                        <img src="images/partners/paypal.png" alt="paypal">
+                     </div>
+                
+        </div>
+            </div>
+        </section>
+
+        <footer class="flex-center">
+            <div class="footer__container">
+                <div class="footer__row">
+                    <div class="footer__col" id="footer__col1">
+                        <img
+                            class="company__logo"
+                            src="images/logo.png"
+                            alt="logo"
+                        />
+                    </div>
+                    <div class="footer__col" id="footer__col2">
+                        <a href="/products.html?filter=summer">Summer Products</a>
+                        <a href="/products.html?filter=winter">Winter Products</a>
+                        <a href="/products.html?filter=autumn">Autumn Products</a>
+                        <a href="/products.html?filter=spring">Spring Products</a>
+                    </div>
+                    <div class="footer__col" id="footer__col3">
+                        <a>About Us</a>
+                        <a href="contact-us.html" target="_blank">Contact Us</a>
+                    </div>
+                </div>
+                <hr />
+                <div class="flex-center footer__social_handles">
+                    <a href="https://facebook.com" target="_blank"><img src="images/social/facebook.png" alt="facebook" /></a>
+                    <a href="https://twitter.com" target="_blank"><img src="images/social/twitter.png" alt="twitter" /></a>
+                    <a href="https://instagram.com" target="_blank"><img src="images/social/instagram.png" alt="instagram" /></a>
+                    <a href="https://pinterest.com" target="_blank"><img src="images/social/pinterest.png" alt="pinterest" /></a>
+                </div>
+                <p id="copyright">
+                    Copyright &#169; 2023 Sam Threads | All rights reserved.
+                </p>
+            </div>
+        </footer>
+        <script src="js/index.js"></script>
+        <script src="js/product_helper.js"></script>
+        <script src="js/auth.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                checkSignedIn();
+                loadProductsToDom({});
+                // Product Category Filter
+                handleCategoryFilter();
+                handleSelectNavOption();
+                handleProductSearch();
+                handlePagination();
+
+                // Home Page Carousel
+                let slideIndex = 0;
+                const carousel = document.getElementById("carousel-1");
+                const carouselSlides =
+                    document.getElementsByClassName("carousel__slide");
+                carouselSlides[slideIndex].style.display = "block";
+
+                if (carouselSlides.length > 1) {
+                    setInterval(() => {
+                        carouselSlides[slideIndex].style.display = "none";
+                        slideIndex++;
+                        slideIndex %= carouselSlides.length;
+                        carouselSlides[slideIndex].style.display = "block";
+                    }, 3000);
+                }
+            });
+        </script>
+
+        
+    </body>
+</html>

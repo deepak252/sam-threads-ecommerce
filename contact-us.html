@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sam Threads | Contact Us</title>
+
+
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/contact-us.css" />
+    </head>
+    <body>
+        <header class="navbar">
+            <img id="navbar__logo" class="company__logo" src="images/logo.png" alt="logo" />
+            <ul class="navbar__options">
+                <li><a href="/">Home</a></li>
+                <li><a href="/products.html">Products</a></li>
+                <li><a href="/contact-us.html">Contact Us</a></li>
+            </ul>
+        </header>
+        <section class="flex-center">
+            <div class="contactus_container">
+                <div id="contact_information">
+                    <h2>Contact Us</h2>
+                    <div class="contact_item">
+                        <img class="size-30" src="images/contact/contact_mail.png" alt="email"/>
+                        <a href="mailto:samthreads@gmail.com" target="_blank">samthreads@gmail.com</a>
+                    </div>
+                    <div class="contact_item">
+                        <img class="size-30" src="images/contact/contact_phone.png" alt="phone"/>
+                        <a href="tel:+1234567890" target="_blank">+1234567890</a>
+                    </div>
+                    <div class="contact_item">
+                        <img class="size-30" src="images/contact/contact_website.png" alt="website"/>
+                        <a href="https://samthreads.com" target="_blank">www.samthreads.com</a>
+                    </div>
+                    <div class="contact_item">
+                        <img class="size-30" src="images/contact/contact_facebook.png" alt="facebook"/>
+                        <a href="https://facebook.com" target="_blank">facebook.com</a>
+                    </div>
+                </div>
+                <form id="send_message_form">
+                    <h3>Send Message</h3>
+                    <div class="textfield">
+                        <input name="fullname" id="fullname_input"  class="textfield__input" type="text" placeholder="Enter full name" required/>
+                        <p id="error_fulllname" class="textfield__error"></p>
+                    </div>
+                    <div class="textfield">
+                        <input id="email_input" class="textfield__input" type="email" placeholder="Enter email" required/>
+                        <p id="error_email" class="textfield__error"></p>
+                    </div>
+                    <div class="textfield">
+                        <textarea rows="5" id="message_input" class="textfield__input" type="text" placeholder="Enter message" required ></textarea>
+                        <p id="error_message" class="textfield__error"></p>
+                    </div>
+                    <button type="submit" id="btn__contactus" class="btn--primary">
+                        Submit
+                    </button>
+                </form>
+            </div>
+
+        </section>
+        
+        <script src="js/auth.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                checkSignedIn();
+                handleSelectNavOption();
+                
+                const contactusForm = document.getElementById("send_message_form");
+                const fullnameInput = document.getElementById("fullname_input");
+                const emailInput = document.getElementById("email_input");
+                const messageInput = document.getElementById("message_input");
+
+                contactusForm.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    const fullname = fullnameInput.value;
+                    const email = emailInput.value;
+                    alert("Thank you for contacting us! \n We have received your message and will get back to you as soon as possible.")
+                    contactusForm.reset
+                });
+                
+            });
+        </script>
+
+    </body>
+</html>

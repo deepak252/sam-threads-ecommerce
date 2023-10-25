@@ -1,0 +1,26 @@
+body{
+    background : var(--background-color)
+}
+
+#signin_form{
+    box-sizing: border-box;
+    margin-top: 150px;
+    width: 90vw;
+    max-width: 500px;
+    padding: 40px 60px;
+    background-color: white;
+}
+
+#btn__signin{
+    width: 100%;
+}
+
+.textfield{
+    margin-top: 12px;
+}
+
+.btn--primary{
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+

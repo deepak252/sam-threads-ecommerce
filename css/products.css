@@ -1,0 +1,37 @@
+
+section{
+    padding: 100px 0 20px 0;
+    min-height: 40vh;
+}
+
+/* Content */
+.content{
+    width: 90vw;
+    max-width: 1100px;
+}
+
+/* Product Categories */
+#product_category{
+    display: flex;
+    padding: 8px 16px;
+}
+
+#product_category__label{
+    flex-grow: 1;
+}
+
+#product_category__dropdown{
+    border: 1px solid var(--primary-color);
+    padding: 8px 12px;
+    background-color: white;
+    margin: 6px;
+    color: var(--primary-color);
+    border-radius: 8px;
+}
+
+#product_category__dropdown:focus{
+    outline: none;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color-1);
+}
+

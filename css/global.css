@@ -1,0 +1,122 @@
+:root {
+    --primary-color: rgb(251, 115, 42);
+    --secondary-color: #6ABF48;
+    --primary-color-1: rgba(251, 115, 42,0.1);
+
+    --font-size: 14px;
+    --grey-0: #F1F1F1;
+    --grey-1: #dad6d6;
+    --grey-2: #b0b0b0;
+    --grey-3: #6b6b6b;
+    --grey-4: #303030;
+    --background-color: rgb(255, 227, 211);
+
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Regular.ttf') format("truetype");
+    ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 8px 0;
+}
+
+.btn--primary {
+    border: none;
+    padding: 10px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 14px;
+    border-radius: 50px;
+}
+
+.btn--primary:hover{
+    cursor: pointer;
+}
+
+.btn--secondary {
+    border: 2px solid var(--primary-color);
+    padding: 8px 22px;
+    background-color: white;
+    color: var(--primary-color);
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.btn--secondary:hover {
+    cursor: pointer;
+}
+
+.textfield {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--grey-2);
+    border-radius: 0;
+    padding: 8px 12px;
+}
+
+.textfield:focus-within {
+    border-color: var(--grey-3);
+}
+
+.textfield .textfield__icon {
+    height: 16px;
+    width: 16px;
+}
+
+.textfield input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    min-width: 0;
+    margin: 0 4px;
+}
+
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.size-30{
+    height: 30px;
+    width: 30px;
+    padding: 6px;
+}
+
+ /* Disable text selection */
+.disable-text-select{
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.max-lines-1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+}
+.max-lines-2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+}

@@ -1,0 +1,67 @@
+body{
+    background : var(--background-color)
+}
+
+.contactus_container{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contact_information{
+    background-color: var(--grey-4);
+    padding: 40px 60px;
+    box-sizing: border-box;
+    color: white;
+    width: 80vw;
+    max-width: 450px;
+}
+.contact_item {
+    display: flex;
+    align-items: center;
+    margin: 12px;
+}
+.contact_item img{
+    background-color: rgba(255, 255, 255, 0.984);
+    color: rebeccapurple;
+    fill: green;
+    margin: 8px;
+}
+.contact_item a{
+    color: white;
+    padding: 4px;
+}
+#send_message_form{
+    box-sizing: border-box;
+    width: 80vw;
+    max-width: 450px;
+    padding: 40px 60px;
+    background-color: white;
+}
+
+#message_input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+#btn__contactus{
+    width: 100%;
+}
+
+.textfield{
+    margin-top: 12px;
+}
+
+.btn--primary{
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+
+@media screen and (max-width:1025px){
+    .contactus_container{
+        grid-template-columns:auto;
+    }
+}
