@@ -1,8 +1,8 @@
-# Sam Threads (E-commerce Website)
-
-This project is an Ecommerce Website Frontend built using pure HTML, CSS, and JavaScript. It incorporates essential features for a seamless shopping experience, including product listing, filtering, cart management, product details, user authentication (signin/signup), and a contact us form.
+# Sam Threads (E-commerce Website) 
 
 This project is an Ecommerce Website Frontend developed using pure HTML, CSS, and JavaScript. It features a set of functionalities essential for an online store.
+
+Link: https://sam-threads.vercel.app/
 
 ## Features
 
